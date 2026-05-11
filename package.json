@@ -1,0 +1,37 @@
+{
+  "name": "special-ed-lesson-modifier-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for generating high-quality lesson plan modifications using lesson and IEP PDFs.",
+  "type": "module",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx watch src/server.ts",
+    "start": "node dist/server.js",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "keywords": [
+    "mcp",
+    "typescript",
+    "special-education",
+    "lesson-planning",
+    "education"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.10.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "dotenv": "^16.5.0",
+    "pdf-parse": "^1.1.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.18",
+    "@types/pdf-parse": "^1.1.5",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.3"
+  }
+}
